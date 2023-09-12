@@ -1,0 +1,22 @@
+2.
+#include <stdio.h>
+#include <string.h>
+
+int sizeOfString(char* ch){
+    int count = 0;
+    int i = 0;
+    while(ch[i] != '\0'){
+        count++;
+        ++i;
+    }
+    return count;
+}
+
+int main()
+{
+    char ch[] = {"Hello World!"};
+    int size = sizeOfString(ch);
+    printf("Size: %d",size);
+
+    return 0;
+}
